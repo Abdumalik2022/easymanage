@@ -7,8 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="description" content="">
    <meta name="author" content="">
-   <link href="{{ asset('backend/img/logo/logo.png') }}" rel="icon">
-   <title>RuangAdmin - Dashboard</title>
+   <title>EasyManage</title>
    <link href="{{ asset('backend/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
    <link href="{{ asset('backend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -25,12 +24,12 @@
            style="display: none"
            v-show="$route.path === '/' || $route.path === '/register' || $route.path === '/forget' ? false : true">
          <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <router-link class="sidebar-brand d-flex align-items-center justify-content-center" to="/home">
                <div class="sidebar-brand-icon">
                   <img src="{{ asset('backend/img/logo/logo2.png') }}">
                </div>
-               <div class="sidebar-brand-text mx-3">RuangAdmin</div>
-            </a>
+               <div class="sidebar-brand-text mx-3">EasyManage</div>
+            </router-link>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
                <router-link class="nav-link" to="/home">
@@ -212,7 +211,7 @@
                   <i class="fa fa-bars"></i>
                </button>
                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item dropdown no-arrow">
+                  <!-- <li class="nav-item dropdown no-arrow">
                      <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                         data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
@@ -373,7 +372,7 @@
                         </a>
                         <a class="dropdown-item text-center small text-gray-500" href="#">View All Taks</a>
                      </div>
-                  </li>
+                  </li> -->
                   <div class="topbar-divider d-none d-sm-block"></div>
                   <li class="nav-item dropdown no-arrow">
                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"

@@ -49,7 +49,7 @@ class AuthController extends Controller
     public function signup(Request $request)
     {
         $validate = $request->validate([
-            'email' => 'required|unique:users|max:255',
+            'email' => 'required|max:255',
             'name' => 'required',
             'password' => 'required|confirmed'
         ]);

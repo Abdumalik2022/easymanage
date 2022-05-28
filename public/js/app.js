@@ -2201,14 +2201,14 @@ __webpack_require__.r(__webpack_exports__);
     signup: function signup() {
       var _this = this;
 
-      axios.post('http://127.0.0.1:8000/api/auth/signup', this.form).then(function (res) {
+      axios.post('/api/auth/signup', this.form).then(function (res) {
         User.responseAfterLogin(res);
         Toast.fire({
           icon: 'success',
           title: 'Signed in successfully'
         });
 
-        _this.$router.push('/home');
+        _this.$router.push('/');
       })["catch"](function () {
         Toast.fire({
           icon: 'warning',

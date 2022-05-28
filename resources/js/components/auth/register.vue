@@ -93,14 +93,14 @@ export default {
    },
    methods: {
       signup() {
-         axios.post('http://127.0.0.1:8000/api/auth/signup', this.form)
+         axios.post('/api/auth/signup', this.form)
             .then(res => {
                User.responseAfterLogin(res)
                Toast.fire({
                   icon: 'success',
                   title: 'Signed in successfully'
                })
-               this.$router.push('/home')
+               this.$router.push('/')
             })
             .catch(() => {
                Toast.fire({
