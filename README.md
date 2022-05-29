@@ -1,2 +1,2 @@
 # easymanage
-Complete project with CRUD, Image upload, Search, Authentication
+Complete project with CRUD, Image upload, Search, Authentication, Full responsive.
